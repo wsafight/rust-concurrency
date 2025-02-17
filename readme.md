@@ -15,4 +15,13 @@
 - [ ] tokio 库
 - [ ] 其他并发库
 
+
+## 其他
+
+使用 clippy 改进代码
+
+```bash
+cargo clippy --fix
+```
+
 本项目源代码来自于 [《深入理解 Rust 并发编程》](https://github.com/smallnest/ebooks/blob/master/rust_concurrency_cookbook.pdf)。

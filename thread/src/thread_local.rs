@@ -1,7 +1,7 @@
 use std::{cell::RefCell, thread};
 
 pub fn start_threads_with_threadlocal() {
-    thread_local!(static COUNTER: RefCell<u32> = RefCell::new(1));
+    thread_local!(static COUNTER: RefCell<u32> = const { RefCell::new(1) });
 
     COUNTER.with(|c| {
         *c.borrow_mut() = 2;

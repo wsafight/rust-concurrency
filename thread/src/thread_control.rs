@@ -13,11 +13,11 @@ pub fn thread_control() {
 
     thread::sleep(Duration::from_millis(100));
 
-    assert_eq!(control.is_done(), false);
+    assert!(!control.is_done());
 
     control.stop();
     handle.join().unwrap();
-    assert_eq!(control.is_interrupted(), false);
+    assert!(!control.is_interrupted());
 
-    assert_eq!(control.is_done(), true)
+    assert!(control.is_done())
 }
