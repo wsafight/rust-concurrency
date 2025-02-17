@@ -23,5 +23,5 @@ pub fn start_scoped_threads() {
     // a 是只写
     a.push(4);
     // x 是只读
-    assert_eq!(x - 1, a.len());
+    assert_eq!(x, a.len());
 }
