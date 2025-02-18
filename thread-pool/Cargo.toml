@@ -5,3 +5,7 @@ edition = "2021"
 
 [dependencies]
 rayon = "1.10"
+threadpool = "1.8"
+rusty_pool = "0.7"
+fast-threadpool = "0.3"
+scoped_threadpool = "0.1"

@@ -1,5 +1,6 @@
 // mod affinity;
 mod current_thread;
+mod panic;
 mod parallelism_count;
 mod park;
 mod scoped;
@@ -11,7 +12,6 @@ mod thread_local;
 mod thread_move;
 mod thread_priority;
 mod yield_now;
-mod panic;
 
 fn main() {
     start_thread::start_thread();

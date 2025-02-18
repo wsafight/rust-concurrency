@@ -1,7 +1,7 @@
 # rust 并发编程
 
 - [x] 线程
-- [ ] 线程池
+- [x] 线程池 (scheduled-thread-pool)
 - [ ] async/await 异步
 - [ ] 容器同步原语
 - [ ] 基础同步原语

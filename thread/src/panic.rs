@@ -11,7 +11,7 @@ pub fn panic_example() {
     match handle.join() {
         Ok(v) => {
             println!("All is well! {:?}", v)
-        },
+        }
         Err(e) => {
             println!("Got an error! {:?}", e)
         }
@@ -19,7 +19,6 @@ pub fn panic_example() {
 
     println!("Exiting main")
 }
-
 
 pub fn panic_caught_example() {
     let handle = thread::spawn(|| {
@@ -33,7 +32,7 @@ pub fn panic_caught_example() {
     match handle.join() {
         Ok(v) => {
             println!("All is well! {:?}", v)
-        },
+        }
         Err(e) => {
             println!("Got an error! {:?}", e)
         }
